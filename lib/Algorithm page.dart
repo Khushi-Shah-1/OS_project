@@ -1,8 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:os_project/Learn%20pages/Learn.dart';
+import 'package:os_project/algorithms/Priority-new/Main-priority-new.dart';
+import 'package:os_project/algorithms/Shortest job First/Main-SJF.dart';
 import 'package:os_project/algorithms/FCFS/Main-fcfs.dart';
-import 'package:os_project/algorithms/Priority/priority.dart';
-import 'package:os_project/algorithms/Shortest job First/SJF.dart';
 import 'package:wave/config.dart';
 import 'package:wave/wave.dart';
 
@@ -212,7 +213,13 @@ class _WaveDemoHomePageState extends State<WaveDemoHomePage> {
                                   color: Color(0xFFE3796C),
                                   textColor: Colors.white,
                                   onPressed: () {
-                                    // Perform some action
+                                    Navigator.push(
+                                      context,
+                                      new MaterialPageRoute(
+                                        builder: (context) => new LearnPage(),
+                                      ),
+                                    );
+                                    //code
                                   },
                                   child: const Text(
                                     'LEARN',
@@ -372,7 +379,7 @@ class _WaveDemoHomePageState extends State<WaveDemoHomePage> {
                                     Navigator.push(
                                       context,
                                       new MaterialPageRoute(
-                                        builder: (context) => new Priority(),
+                                        builder: (context) => new MyPriorityApp(),
                                       ),
                                     );
                                   },
@@ -492,7 +499,7 @@ class _WaveDemoHomePageState extends State<WaveDemoHomePage> {
                                     Navigator.push(
                                       context,
                                       new MaterialPageRoute(
-                                        builder: (context) => new SJF(),
+                                        builder: (context) => new MySJFApp(),
                                       ),
                                     );
                                   },
@@ -515,7 +522,7 @@ class _WaveDemoHomePageState extends State<WaveDemoHomePage> {
                                     Navigator.push(
                                       context,
                                       new MaterialPageRoute(
-                                        builder: (context) => new SJF(),
+                                        builder: (context) => new MySJFApp(),
                                       ),
                                     );
                                   },
