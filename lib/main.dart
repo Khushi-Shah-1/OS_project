@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:os_project/animation1.dart';
@@ -73,7 +72,6 @@ class FirstScreen extends StatelessWidget {
                 ),
                 RaisedButton(
                   color: Color(0xFF22456D),
-                  padding: EdgeInsets.fromLTRB(0,0,0, 0),
                   child: Text(
                     'LAUNCH',
                     style: TextStyle(
